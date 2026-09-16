@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+main {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  padding: 0 44px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.container-1 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.banner {
+  height: 208px;
+  background: url("./assests/header-img.png") no-repeat center/cover;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  font-weight: 800;
+  font-size: 43px;
+}
+
+.btn-primary {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.search-form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -96px;
+  display: flex;
+  border-radius: 6px;
+  height: 38px;
+  background: white;
+  border: 1px solid #9ca3af;
+  padding-left: 13px;
+  z-index: 99;
+}
+.search-bar {
+  border: none;
+  flex-grow: 1;
+  border-radius: 6px 0 0 6px;
+  padding: 13px 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+.search-btn {
+  width: 120px;
+  padding-left: 4px;
+  background: #f9fafb;
+  border-left: 1px solid #9ca3af !important;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.search-bar:focus {
+  outline: none;
+}
+.search-bar::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+}
+.search-form svg {
+  align-self: center;
+}
+.content-sec {
+  position: relative;
+  height: calc(100% - 208px);
+  padding-top: 40px;
+  overflow-y: scroll;
+}
+.content .no-data-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.movie-poster {
+  width: 99px;
+  flex-shrink: 0;
+}
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 3px;
+  display: block;
+}
+.movie-box {
+  display: flex;
+  padding: 21px 0 28px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.movie-desc {
+  padding: 15px 0 13px 21px;
+}
+.movie-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.movie-title span {
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 7px;
+  transform: translateY(-3px);
+  gap: 4px;
+}
+.movie-title span svg {
+  transform: translateY(1px);
+}
+.movie-info {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 11px 0 8px;
+  display: flex;
+  align-items: center;
+}
+.movie-info .duration {
+  flex-shrink: 0;
+}
+.movie-info .genre {
+  margin: 0 30px 0 19px;
+}
+.wishlist-btn {
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.wishlist-btn img {
+  height: 16px;
+}
+.movie-brief {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  font-weight: 300;
+}
+.error-msg {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* media querries */
+
+@media screen and (min-width: 1300px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  .movie-box {
+    width: 50%;
+    padding: 21px 15px 28px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .movie-box .movie-brief {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .movie-desc {
+    padding: 5px 0 5px 15px;
+  }
+  .movie-info {
+    flex-wrap: wrap;
+    margin: 11px 0 18px;
+  }
+  .wishlist-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .movie-brief {
+    font-size: 12px;
+  }
+  .movie-info .genre {
+    margin-left: 19px;
+  }
+  .content-sec {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .heading {
+    flex-wrap: wrap;
+  }
+  h1 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .search-form {
+    bottom: -81px;
+  }
+  .search-bar {
+    width: 100%;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .movie-info .genre {
+    margin: 0;
+  }
+  .movie-info .duration {
+    margin-right: 15px;
+  }
+  .movie-info {
+    margin: 11px 0 15px;
+  }
+  .content-sec {
+    padding-top: 10px;
+  }
+}

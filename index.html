@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Watchlist 🍿</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="banner">
+        <div class="container container-1">
+          <div class="heading">
+            <h1>Find your film</h1>
+            <a href="./watchlist.html" class="btn-primary">My Watchlist</a>
+            <form action="" class="search-form">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4ZM2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 9.29583 13.5892 10.4957 12.8907 11.4765L17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L11.4765 12.8907C10.4957 13.5892 9.29583 14 8 14C4.68629 14 2 11.3137 2 8Z"
+                  fill="#9CA3AF"
+                />
+              </svg>
+              <input
+                type="search"
+                name="movie-name"
+                class="search-bar"
+                placeholder="Search for a movie"
+              />
+              <button type="submit" class="search-btn">Search</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="content-sec">
+        <div class="container">
+          <div class="content">
+            <img
+              src="./assests/no-data-initial.png"
+              alt="no-data-image"
+              class="no-data-img"
+            />
+            <!-- <div class="movie-box">
+              <div class="movie-poster">
+                <img
+                  src="https://imgs.search.brave.com/1JKjGEREpoKvLSWf9CF55ipfp0CU69WF87cxxG22RhI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjIz/Mzc2Mjc5Ny9waG90/by9idWVub3MtYWly/ZXMtYXJnZW50aW5h/LWRldGFpbGVkLXZp/ZXctb2YtbGlvbmVs/LW1lc3NpLW9mLWFy/Z2VudGluYXMtamVy/c2V5LWR1cmluZy10/aGUtc291dGguanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPWZo/UnV5SExKWVRPTnNZ/bDBGSXFwaEM3WHRz/ZW9VcEtZX0hsYnpu/SGdzMTQ9"
+                  alt=""
+                />
+              </div>
+              <div class="movie-desc">
+                <h3 class="movie-title">
+                  Blade Runner
+                  <span>
+                    <svg
+                      width="12"
+                      height="11"
+                      viewBox="0 0 12 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.86276 0.518226C5.08727 -0.172757 6.06483 -0.172758 6.28934 0.518225L7.09152 2.98707C7.19193 3.29609 7.47989 3.50531 7.80481 3.50531H10.4007C11.1273 3.50531 11.4293 4.43502 10.8416 4.86207L8.74142 6.3879C8.47856 6.57889 8.36856 6.91741 8.46897 7.22643L9.27115 9.69528C9.49566 10.3863 8.7048 10.9609 8.11702 10.5338L6.01689 9.00797C5.75402 8.81699 5.39808 8.81699 5.13521 9.00797L3.03508 10.5338C2.4473 10.9609 1.65644 10.3863 1.88095 9.69528L2.68313 7.22643C2.78354 6.91741 2.67354 6.57889 2.41068 6.3879L0.31055 4.86207C-0.277235 4.43502 0.0248458 3.50531 0.751388 3.50531H3.34729C3.67221 3.50531 3.96017 3.29609 4.06058 2.98707L4.86276 0.518226Z"
+                        fill="#FEC654"
+                      />
+                    </svg>
+                    89
+                  </span>
+                </h3>
+                <div class="movie-info">
+                  <span class="duration">117 min</span>
+                  <span class="genre">Action, Drama, Sci-fi</span>
+                  <button class="wishlist-btn">
+                    <img src="./assests/plus-icon.png" alt="add-icon" />
+                    Watchlist
+                  </button>
+                </div>
+                <p class="movie-brief">
+                  A blade runner must pursue and terminate four replicants who
+                  stole a ship in space, and have returned to Earth to find
+                  their creator.
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
