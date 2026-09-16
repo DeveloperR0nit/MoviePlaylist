@@ -129,7 +129,7 @@ async function renderSearchedMovie(name) {
 }
 
 function checkMovieAdded(id) {
-  const data = JSON.parse(localStorage.getItem("watchlist"));
+  const data = JSON.parse(localStorage.getItem("watchlist")) || [];
   if (data.includes(id)) {
     return `<button class="wishlist-btn added" id=${id}>
     <img src="./assests/tick-icon.png" alt="add-icon" />
@@ -175,7 +175,7 @@ function watchlistBtn() {
 async function fetchApiTitle(name) {
   try {
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=486f9cb9&t=${name}`,
+      `https://www.omdbapi.com/?apikey=486f9cb9&t=${name}`,
     );
     if (!res.ok) {
       throw new Error(`HTTP error: ${res.status}`);
@@ -190,7 +190,7 @@ async function fetchApiTitle(name) {
 async function fetchApiId(name) {
   try {
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=486f9cb9&i=${name}`,
+      `https://www.omdbapi.com/?apikey=486f9cb9&i=${name}`,
     );
     if (!res.ok) {
       throw new Error(`HTTP error: ${res.status}`);

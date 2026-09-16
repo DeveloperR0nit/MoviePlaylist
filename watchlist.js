@@ -68,7 +68,7 @@ function watchlistBtn() {
 async function fetchApiId(name) {
   try {
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=486f9cb9&i=${name}`,
+      `https://www.omdbapi.com/?apikey=486f9cb9&i=${name}`,
     );
     if (!res.ok) {
       throw new Error(`HTTP error: ${res.status}`);
