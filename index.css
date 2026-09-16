@@ -179,6 +179,7 @@ h1 {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+  margin-top: 30px;
 }
 
 /* media querries */
@@ -228,6 +229,9 @@ h1 {
   .content-sec {
     padding-top: 20px;
   }
+  .search-form{
+    bottom: -102px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -239,7 +243,7 @@ h1 {
     margin-bottom: 15px;
   }
   .search-form {
-    bottom: -81px;
+    bottom: -86px;
   }
   .search-bar {
     width: 100%;
@@ -257,6 +261,6 @@ h1 {
     margin: 11px 0 15px;
   }
   .content-sec {
-    padding-top: 10px;
+    padding-top: 30px;
   }
 }
