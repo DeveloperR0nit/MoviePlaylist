@@ -194,6 +194,9 @@ h1 {
     width: 50%;
     padding: 21px 15px 28px;
   }
+  .error-msg {
+    margin: 30px auto 0;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -229,7 +232,7 @@ h1 {
   .content-sec {
     padding-top: 20px;
   }
-  .search-form{
+  .search-form {
     bottom: -102px;
   }
 }
